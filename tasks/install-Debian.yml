@@ -2,4 +2,5 @@
 - name: Install Qemu Guest Agent
   apt:
     name: qemu-guest-agent
+    update_cache: yes
     state: present
