@@ -1,0 +1,6 @@
+---
+- import_tasks: install-Debian.yml
+  when: ansible_os_family in ['Debian', 'Ubuntu']
+
+- import_tasks: install-Centos.yml
+  when: ansible_os_family in ['CentOS', 'Redhat', 'Redhat Enterprise Linux']
